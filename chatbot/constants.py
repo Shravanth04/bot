@@ -10,4 +10,18 @@ TERMINATES = {
     "pt-br": "sair",
     "he": "זהו"
 }
-LANGUAGE_SUPPORT = ["en", "de", "pt-br","he"]
+
+MAJOR = 0
+MINOR = 3
+MICRO = 1
+PATCH = 0
+
+VERSION = '{}.{}.{}.{}'.format(MAJOR, MINOR, MICRO, PATCH)
+
+LANGUAGE_SUPPORT = ["en", "de", "pt-br", "he"]
+
+NAME = 'chatbotAI'
+AUTHOR = "Ahmad Faizal B H"
+AUTHOR_EMAIL = "ahmadfaizalbh726@gmail.com"
+COPYRIGHT = "Copyright (c) 2017 Ahmad Faizal B H"
+URL = "https://github.com/ahmadfaizalbh/Chatbot"
