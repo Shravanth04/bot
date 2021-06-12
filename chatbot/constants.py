@@ -11,13 +11,6 @@ TERMINATES = {
     "he": "זהו"
 }
 
-MAJOR = 0
-MINOR = 3
-MICRO = 1
-PATCH = 0
-
-VERSION = '{}.{}.{}.{}'.format(MAJOR, MINOR, MICRO, PATCH)
-
 LANGUAGE_SUPPORT = ["en", "de", "pt-br", "he"]
 
 NAME = 'chatbotAI'

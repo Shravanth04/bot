@@ -113,7 +113,7 @@ I will remember your age
 Age will be store for the current user in memory and not included in the response, as you can see from the above
 example.
 
-3. **Set memory in python**
+**Set memory in python**
    Session is dictionary kind of storage. Keeps the attributes and values for each user session. 
    we can add value to it similar way of dictionary.
 
@@ -142,47 +142,21 @@ Chat Sample
 > Yes I do Arun
 ```
 
-## Get memory value in think mode
+## Set and Get memory value in python session 
 
-> age sample is store in set memory we can get it below sample
-
-### Full block sample
-
+#### Syntax set memory
 ```
-{% block %}
-    {% client %}show (?P<name>.*){% endclient %}
-    {% response %}{ %name }{% endresponse %}
-{% endblock %}
+ session.memory[variable_name] = value
 ```
 
-Chat Sample
+#### Syntax set memory
 
 ```
-> show age  
-29
-```
-
-## Get memory value in python session 
-
-#### Python code sample
-
-```python
-from chatbot import register_call
-
-
-@register_call("increment_count")
-def memory_get_set(session, query):
-    name = query.strip().lower()
-    # Get memory
-    old_count = session.memory.get(name, '0')
-    new_count = int(old_count) + 1
-    # Set memory
-    session.memory[name] = str(new_count)
-    return f"count  {new_count}"
+session.memory.get(variable_name)
 ```
 
 ### Full block sample
-
+Increment memory sample [python mode](https://github.com/ahmadfaizalbh/Chatbot/blob/master/examples/get_set_memory_example.py#L5-L13)
 ```
 {% block %}
     {% client %}increment (?P<name>.*){% endclient %}

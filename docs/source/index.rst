@@ -10,6 +10,7 @@ Welcome to ChatBot's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   template_tags
    memory
    
 
